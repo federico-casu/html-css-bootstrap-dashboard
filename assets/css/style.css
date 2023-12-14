@@ -31,6 +31,19 @@
     margin-top: var(--bs-dropdown-spacer);
 }
 
+aside {
+    background-image: url('../img/sidebar-bg.png');
+    background-color: #061e34;
+}
+
+aside span {
+    font-size: 12px;
+}
+
+aside i {
+    font-size: 12px;
+}
+
 
 
 
