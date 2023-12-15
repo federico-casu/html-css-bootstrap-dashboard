@@ -1,16 +1,16 @@
 .dashboard_top {
     background-color: #f8f9fa;
     border: 1px dashed red;
-    height: 80px;
+    height: 70px;
 }
 
 .dashboard_bottom {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     /* border: 2px dashed black; */
 }
 
 .dashboard_bottom_left {
-    border: 1px dashed blue;
+    border: 1px dashed yellow;
 }
 
 .dashboard_bottom_right {
@@ -25,15 +25,11 @@
     height: 60%;
 }
 
-.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: -100px;
-    margin-top: var(--bs-dropdown-spacer);
-}
-
-aside {
+.side_bar {
     background-image: url('../img/sidebar-bg.png');
     background-color: #061e34;
+    border: 1px dashed yellow;
+
 }
 
 aside span {
