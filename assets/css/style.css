@@ -53,14 +53,40 @@ aside i {
 @media screen and (min-width: 768px) {
     /* Valutare se correggere a 20/80 */
     .dashboard_bottom_right_top {
+        height: 20%;
+    }
+    
+    .dashboard_bottom_right_bottom {
+        height: 80%;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
+    }
+}
+
+
+
+/* lg size 992px */
+@media screen and (min-width: 992px) {
+    /* Valutare se correggere a 20/80 */
+    .dashboard_bottom_right_top {
+        height: 20%;
+    }
+    
+    .dashboard_bottom_right_bottom {
+        height: 80%;
+    }
+}
+
+/* xxl size 1400px */
+@media screen and (min-width: 1400px) {
+    /* Valutare se correggere a 20/80 */
+    .dashboard_bottom_right_top {
         height: 15%;
     }
     
     .dashboard_bottom_right_bottom {
         height: 85%;
-    }
-
-    .offcanvas.offcanvas-end {
-        width: 50%;
     }
 }
