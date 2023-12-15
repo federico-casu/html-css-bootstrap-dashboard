@@ -23,7 +23,7 @@
         <!-- dashboard top -->
         <header class="dashboard_top d-flex">
             <nav class="navbar bg-body-tertiary w-100">
-                <div class="container-fluid flex-nowrap border ps-2">
+                <div class="container-fluid flex-nowrap ps-2">
                     <!-- logo -->
                     <a class="navbar-brand d-lg-none" href="#">
                         <img src="./assets/img/mobile-logo.png" alt="Boolean" class="img-fluid" width="40" height="40">
@@ -47,9 +47,9 @@
                         </button>
                         <!-- dropdown menu list -->
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" type="button">Action</button></li>
-                            <li><button class="dropdown-item" type="button">Another action</button></li>
-                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            <li><button class="dropdown-item text-capitalize" type="button">profilo</button></li>
+                            <li><button class="dropdown-item text-capitalize" type="button">fatturazione</button></li>
+                            <li><button class="dropdown-item text-capitalize" type="button">log out</button></li>
                         </ul>
                     </div>
                 </div>
@@ -102,8 +102,91 @@
 
             <!-- dashboard body -->
             <div class="dashboard_bottom_right p-0 w-100">
-                <div class="dashboard_bottom_right_top border bg-primary text-white">
+                <div class="dashboard_bottom_right_top row m-0 border bg-primary text-white">
+                    <div class="col-12 col-md-4 order-md-1 d-flex align-items-start pt-3 gap-3 border">
+                        <span class="text-capitalize">nuovo studente</span>
+                        <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label for="name" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="surname" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="surname">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 mb-3">
+                                        <label for="address" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="address">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Città</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-4 mb-3">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Scegli...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2 mb-3">
+                                            <label for="postalCode" class="form-label">CAP</label>
+                                            <input type="password" class="form-control" id="postalCode">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label for="inputGroupFile04" class="form-label">Foto</label>
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                            <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary text-capitalize">salva</button>
+                                    <!-- <button type="submit" class="btn btn-warning text-capitalize">svuota</button> -->
+                                    <input class="btn btn-warning" type="reset" value="Svuota">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4 border">
+
+                    </div>
+                    <div class="col-12 col-md-4 border">
+
+                    </div>
                 </div> 
                 
                 <div class="dashboard_bottom_right_bottom border">

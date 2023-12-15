@@ -40,6 +40,9 @@ aside i {
     font-size: 12px;
 }
 
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
 
 
 
@@ -55,5 +58,9 @@ aside i {
     
     .dashboard_bottom_right_bottom {
         height: 85%;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
     }
 }
