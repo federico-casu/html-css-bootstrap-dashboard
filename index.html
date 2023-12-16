@@ -103,7 +103,7 @@
             <!-- dashboard body -->
             <div class="dashboard_bottom_right p-0 w-100">
                 <div class="dashboard_bottom_right_top row m-0 border bg-primary text-white">
-                    <div class="col-12 col-md-4 order-md-1 d-flex align-items-start pt-3 gap-3">
+                    <div class="col-12 col-md-4 col-lg-3 order-md-1 d-flex align-items-start pt-3 gap-3">
                         <span class="text-capitalize">nuovo studente</span>
                         <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
@@ -181,7 +181,7 @@
                         </div>
 
                     </div>
-                    <div class="col-12 col-md-4 pt-3">
+                    <div class="col-12 col-md-4 col-lg-6 pt-3">
                         <nav style="--bs-breadcrumb-divider: '&Gt;';" aria-label="breadcrumb">
                             <ol style=" --bs-breadcrumb-divider-color: white;" class="breadcrumb align-items-center m-0">
                               <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-capitalize fs-3 text-white">boolean</a></li>
@@ -197,12 +197,154 @@
 
                         </nav>
                     </div>
-                    <div class="col-12 col-md-4 pt-3">
-
+                    <div class="col-12 col-md-4 col-lg-3 pt-3">
+                        <p class="mb-2">Studenti online negli ultimi 30 minuti</p>
+                        <span class="fs-2">125</span>
                     </div>
                 </div> 
                 
-                <div class="dashboard_bottom_right_bottom border">
+                <div class="dashboard_bottom_right_bottom border row w-100 m-0 py-3 px-2">
+
+                    <div class="col-12 col-lg-8 p-0 m-0">
+                        <!-- 2 cards: next classes, faq -->
+                        <div class="next_classes card">
+                            <div class="card-header">
+                                <h5 class="card-title text-capitalize">prossime classi</h5>
+                            </div>
+                            <div class="card-body">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="text-capitalize">nome</th>
+                                        <th scope="col" class="text-center d-none d-md-table-cell">Data inizio</th>
+                                        <th scope="col" class="text-uppercase text-center d-none d-md-table-cell">roi</th>
+                                        <th scope="col" class="text-capitalize text-center">stato</th>
+                                        <th scope="col" class="text-capitalize text-center">azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-success text-capitalize">done</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-success text-capitalize">done</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-warning text-white text-capitalize">process</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-success text-capitalize">done</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-danger text-capitalize">failed</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-success text-capitalize">done</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-danger text-capitalize">failed</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                      <tr class="border-bottom">
+                                        <!-- <th scope="row">1</th> -->
+                                        <td class="d-flex align-items-center gap-2 border-0">
+                                            <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
+                                            <span class="text-capitalize">classe 75</span>
+                                        </td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="border-0 text-center d-none d-md-table-cell">20%</td>
+                                        <td class="border-0 text-center"><span class="badge text-bg-success text-capitalize">done</span></td>
+                                        <td class="border-0 text-center">
+                                            <i class="fa-solid fa-pen text-body-secondary border p-1 rounded-1"></i>
+                                            <i class="fa-solid fa-trash text-body-secondary border p-1 rounded-1"></i>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 p-0 m-0">
+                        <!-- 2 cards: to do, graphic -->
+                    </div>
                     
                 </div> 
 
