@@ -1,6 +1,6 @@
 .dashboard_top {
     background-color: #f8f9fa;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     height: 70px;
 }
 
@@ -9,12 +9,13 @@
     /* border: 2px dashed black; */
 }
 
-.dashboard_bottom_left {
-    border: 1px dashed yellow;
+.side_bar .nav li:hover a {
+    /* background-color: rgba(6, 30, 52, 0.5); */
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .dashboard_bottom_right {
-    border: 2px dashed lime;
+    /* border: 2px dashed lime; */
     /* height: calc(100vh - 70px); */
 }
 
@@ -29,7 +30,7 @@
 .side_bar {
     background-image: url('../img/sidebar-bg.png');
     background-color: #061e34;
-    border: 1px dashed yellow;
+    /* border: 1px dashed yellow; */
 
 }
 
@@ -61,9 +62,7 @@ aside i {
         /* height: 80%; */
     }
 
-    .offcanvas.offcanvas-end {
-        width: 50%;
-    }
+    
 }
 
 
@@ -77,6 +76,10 @@ aside i {
     
     .dashboard_bottom_right_bottom {
         /* height: 80%; */
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 60%;
     }
 }
 

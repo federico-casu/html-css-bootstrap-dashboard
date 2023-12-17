@@ -26,16 +26,25 @@
                 <div class="container-fluid flex-nowrap ps-2">
                     <!-- logo -->
                     <a class="navbar-brand d-lg-none" href="#">
-                        <img src="./assets/img/mobile-logo.png" alt="Boolean" class="img-fluid" width="40" height="40">
+                        <img src="./assets/img/mobile-logo.png" alt="Boolean" class="img-fluid" width="50" height="40">
                     </a>
                     <!-- logo lg -->
                     <a class="navbar-brand d-none d-lg-block" href="#">
-                        <img src="./assets/img/logo.svg" alt="Boolean" class="img-fluid" width="">
+                        <img src="./assets/img/logo.svg" alt="Boolean" class="img-fluid">
                     </a>
                     <!-- input search -->
-                    <form class="d-flex w-100" role="search">
+                    <!-- <form class="d-flex w-100" role="search">
                         <input class="form-control me-2" type="search" placeholder="&#128269;  Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    </form> -->
+                    <form class="d-flex w-100 pe-2" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text bg-secondary-subtle" id="magnifying-glass">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="search" class="form-control bg-secondary-subtle" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="basic-search">
+                        </div>
                     </form>
+
                     <!-- buttons -->
                     <div class="btn-group align-items-center gap-3">
                         <i class="bi bi-list-ul text-body-secondary d-none d-lg-block"></i>
@@ -102,7 +111,7 @@
 
             <!-- dashboard body -->
             <div class="dashboard_bottom_right p-0 w-100 overflow-auto">
-                <div class="dashboard_bottom_right_top row m-0 border bg-primary text-white">
+                <div class="dashboard_bottom_right_top row m-0 bg-primary text-white">
                     <div class="col-12 col-md-4 col-lg-3 order-md-1 d-flex align-items-start pt-3 gap-3">
                         <span class="text-capitalize">nuovo studente</span>
                         <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
@@ -115,24 +124,24 @@
                             <div class="offcanvas-body">
                                 <form>
                                     <div class="row">
-                                        <div class="col-6 mb-3">
+                                        <div class="col-12 col-sm-6 mb-3">
                                             <label for="name" class="form-label">Nome</label>
                                             <input type="text" class="form-control" id="name">
                                         </div>
-                                        <div class="col-6 mb-3">
+                                        <div class="col-12 col-sm-6 mb-3">
                                             <label for="surname" class="form-label">Cognome</label>
                                             <input type="text" class="form-control" id="surname">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6 mb-3">
+                                        <div class="col-12 col-sm-6 mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Email</label>
                                             <div class="input-group">
                                                 <span class="input-group-text" id="addon-wrapping">@</span>
                                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
                                         </div>
-                                        <div class="col-6 mb-3">
+                                        <div class="col-12 col-sm-6 mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="exampleInputPassword1">
                                         </div>
@@ -144,18 +153,18 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-6 mb-3">
+                                        <div class="col-12 col-sm-6 mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Città</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                         </div>
-                                        <div class="col-4 mb-3">
+                                        <div class="col-12 col-sm-4 mb-3">
                                             <label for="inputState" class="form-label">Stato</label>
                                             <select id="inputState" class="form-select">
                                                 <option selected>Scegli...</option>
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                        <div class="col-2 mb-3">
+                                        <div class="col-12 col-sm-2 mb-3">
                                             <label for="postalCode" class="form-label">CAP</label>
                                             <input type="password" class="form-control" id="postalCode">
                                         </div>
@@ -203,7 +212,7 @@
                     </div>
                 </div> 
                 
-                <div class="dashboard_bottom_right_bottom border row w-100 m-0 py-3 px-2">
+                <div class="dashboard_bottom_right_bottom row w-100 m-0 py-3 px-2">
 
                     <div class="col-12 col-lg-8 p-0 pe-lg-3 m-0">
                         <!-- 2 cards: next classes, faq -->
@@ -227,7 +236,7 @@
                                     <tbody>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -241,7 +250,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -255,7 +264,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -269,7 +278,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -283,7 +292,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -297,7 +306,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -311,7 +320,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
@@ -325,7 +334,7 @@
                                       </tr>
                                       <tr class="border-bottom">
                                         <!-- <th scope="row">1</th> -->
-                                        <td class="d-flex align-items-center gap-2 border-0">
+                                        <td class="d-flex align-items-center gap-2 border-0 flex-wrap">
                                             <img src="./assets/img/class-avatar.jpg" class="img-fluid rounded-circle" width="25" alt="">
                                             <span class="text-capitalize">classe 75</span>
                                         </td>
