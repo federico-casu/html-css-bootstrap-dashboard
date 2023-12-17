@@ -15,8 +15,7 @@
 
 .dashboard_bottom_right {
     border: 2px dashed lime;
-    height: calc(100vh - 70px);
-    overflow: auto;
+    /* height: calc(100vh - 70px); */
 }
 
 .dashboard_bottom_right_top {
@@ -24,7 +23,7 @@
 }
 
 .dashboard_bottom_right_bottom {
-    height: 60%;
+    /* height: 60%; */
 }
 
 .side_bar {
@@ -59,7 +58,7 @@ aside i {
     }
     
     .dashboard_bottom_right_bottom {
-        height: 80%;
+        /* height: 80%; */
     }
 
     .offcanvas.offcanvas-end {
@@ -77,7 +76,7 @@ aside i {
     }
     
     .dashboard_bottom_right_bottom {
-        height: 80%;
+        /* height: 80%; */
     }
 }
 
@@ -89,6 +88,6 @@ aside i {
     }
     
     .dashboard_bottom_right_bottom {
-        height: 85%;
+        /* height: 85%; */
     }
 }
